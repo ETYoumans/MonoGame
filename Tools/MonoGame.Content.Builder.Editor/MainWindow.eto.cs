@@ -207,21 +207,25 @@ namespace MonoGame.Tools.Pipeline
             cmdNewItem.MenuText = "New Item...";
             cmdNewItem.ToolTip = "New Item";
             cmdNewItem.Image = Global.GetEtoIcon("Commands.NewItem.png");
+            cmdNewItem.Shortcut = Application.Instance.CommonModifier | Keys.Shift | Keys.A;
 
             cmdNewFolder = new Command();
             cmdNewFolder.MenuText = "New Folder...";
             cmdNewFolder.ToolTip = "New Folder";
             cmdNewFolder.Image = Global.GetEtoIcon("Commands.NewFolder.png");
+            cmdNewFolder.Shortcut = Application.Instance.CommonModifier | Keys.Shift | Keys.N;
 
             cmdExistingItem = new Command();
             cmdExistingItem.MenuText = "Existing Item...";
             cmdExistingItem.ToolTip = "Add Existing Item";
             cmdExistingItem.Image = Global.GetEtoIcon("Commands.ExistingItem.png");
+            cmdExistingItem.Shortcut = Application.Instance.AlternateModifier | Keys.Shift | Keys.A;
 
             cmdExistingFolder = new Command();
             cmdExistingFolder.MenuText = "Existing Folder...";
             cmdExistingFolder.ToolTip = "Add Existing Folder";
             cmdExistingFolder.Image = Global.GetEtoIcon("Commands.ExistingFolder.png");
+            cmdNewFolder.Shortcut = Application.Instance.AlternateModifier | Keys.Shift | Keys.N;
 
             // Build Commands
 
